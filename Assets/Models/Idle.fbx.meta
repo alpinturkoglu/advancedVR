@@ -78,6 +78,80 @@ ModelImporter:
     100144: UpperArm.R
     100146: UpperLeg.L
     100148: UpperLeg.R
+    100150: Body
+    100152: Bottoms
+    100154: default
+    100156: Eyes
+    100158: Hair
+    100160: mixamorig:Head
+    100162: mixamorig:HeadTop_End
+    100164: mixamorig:Hips
+    100166: mixamorig:LeftArm
+    100168: mixamorig:LeftEye
+    100170: mixamorig:LeftFoot
+    100172: mixamorig:LeftForeArm
+    100174: mixamorig:LeftHand
+    100176: mixamorig:LeftHandIndex1
+    100178: mixamorig:LeftHandIndex2
+    100180: mixamorig:LeftHandIndex3
+    100182: mixamorig:LeftHandIndex4
+    100184: mixamorig:LeftHandMiddle1
+    100186: mixamorig:LeftHandMiddle2
+    100188: mixamorig:LeftHandMiddle3
+    100190: mixamorig:LeftHandMiddle4
+    100192: mixamorig:LeftHandPinky1
+    100194: mixamorig:LeftHandPinky2
+    100196: mixamorig:LeftHandPinky3
+    100198: mixamorig:LeftHandPinky4
+    100200: mixamorig:LeftHandRing1
+    100202: mixamorig:LeftHandRing2
+    100204: mixamorig:LeftHandRing3
+    100206: mixamorig:LeftHandRing4
+    100208: mixamorig:LeftHandThumb1
+    100210: mixamorig:LeftHandThumb2
+    100212: mixamorig:LeftHandThumb3
+    100214: mixamorig:LeftHandThumb4
+    100216: mixamorig:LeftLeg
+    100218: mixamorig:LeftShoulder
+    100220: mixamorig:LeftToe_End
+    100222: mixamorig:LeftToeBase
+    100224: mixamorig:LeftUpLeg
+    100226: mixamorig:Neck
+    100228: mixamorig:RightArm
+    100230: mixamorig:RightEye
+    100232: mixamorig:RightFoot
+    100234: mixamorig:RightForeArm
+    100236: mixamorig:RightHand
+    100238: mixamorig:RightHandIndex1
+    100240: mixamorig:RightHandIndex2
+    100242: mixamorig:RightHandIndex3
+    100244: mixamorig:RightHandIndex4
+    100246: mixamorig:RightHandMiddle1
+    100248: mixamorig:RightHandMiddle2
+    100250: mixamorig:RightHandMiddle3
+    100252: mixamorig:RightHandMiddle4
+    100254: mixamorig:RightHandPinky1
+    100256: mixamorig:RightHandPinky2
+    100258: mixamorig:RightHandPinky3
+    100260: mixamorig:RightHandPinky4
+    100262: mixamorig:RightHandRing1
+    100264: mixamorig:RightHandRing2
+    100266: mixamorig:RightHandRing3
+    100268: mixamorig:RightHandRing4
+    100270: mixamorig:RightHandThumb1
+    100272: mixamorig:RightHandThumb2
+    100274: mixamorig:RightHandThumb3
+    100276: mixamorig:RightHandThumb4
+    100278: mixamorig:RightLeg
+    100280: mixamorig:RightShoulder
+    100282: mixamorig:RightToe_End
+    100284: mixamorig:RightToeBase
+    100286: mixamorig:RightUpLeg
+    100288: mixamorig:Spine
+    100290: mixamorig:Spine1
+    100292: mixamorig:Spine2
+    100294: Shoes
+    100296: Tops
     400000: Armature
     400002: BasicBandit_Body
     400004: BasicBandit_Clothes
@@ -153,19 +227,112 @@ ModelImporter:
     400144: UpperArm.R
     400146: UpperLeg.L
     400148: UpperLeg.R
+    400150: Body
+    400152: Bottoms
+    400154: default
+    400156: Eyes
+    400158: Hair
+    400160: mixamorig:Head
+    400162: mixamorig:HeadTop_End
+    400164: mixamorig:Hips
+    400166: mixamorig:LeftArm
+    400168: mixamorig:LeftEye
+    400170: mixamorig:LeftFoot
+    400172: mixamorig:LeftForeArm
+    400174: mixamorig:LeftHand
+    400176: mixamorig:LeftHandIndex1
+    400178: mixamorig:LeftHandIndex2
+    400180: mixamorig:LeftHandIndex3
+    400182: mixamorig:LeftHandIndex4
+    400184: mixamorig:LeftHandMiddle1
+    400186: mixamorig:LeftHandMiddle2
+    400188: mixamorig:LeftHandMiddle3
+    400190: mixamorig:LeftHandMiddle4
+    400192: mixamorig:LeftHandPinky1
+    400194: mixamorig:LeftHandPinky2
+    400196: mixamorig:LeftHandPinky3
+    400198: mixamorig:LeftHandPinky4
+    400200: mixamorig:LeftHandRing1
+    400202: mixamorig:LeftHandRing2
+    400204: mixamorig:LeftHandRing3
+    400206: mixamorig:LeftHandRing4
+    400208: mixamorig:LeftHandThumb1
+    400210: mixamorig:LeftHandThumb2
+    400212: mixamorig:LeftHandThumb3
+    400214: mixamorig:LeftHandThumb4
+    400216: mixamorig:LeftLeg
+    400218: mixamorig:LeftShoulder
+    400220: mixamorig:LeftToe_End
+    400222: mixamorig:LeftToeBase
+    400224: mixamorig:LeftUpLeg
+    400226: mixamorig:Neck
+    400228: mixamorig:RightArm
+    400230: mixamorig:RightEye
+    400232: mixamorig:RightFoot
+    400234: mixamorig:RightForeArm
+    400236: mixamorig:RightHand
+    400238: mixamorig:RightHandIndex1
+    400240: mixamorig:RightHandIndex2
+    400242: mixamorig:RightHandIndex3
+    400244: mixamorig:RightHandIndex4
+    400246: mixamorig:RightHandMiddle1
+    400248: mixamorig:RightHandMiddle2
+    400250: mixamorig:RightHandMiddle3
+    400252: mixamorig:RightHandMiddle4
+    400254: mixamorig:RightHandPinky1
+    400256: mixamorig:RightHandPinky2
+    400258: mixamorig:RightHandPinky3
+    400260: mixamorig:RightHandPinky4
+    400262: mixamorig:RightHandRing1
+    400264: mixamorig:RightHandRing2
+    400266: mixamorig:RightHandRing3
+    400268: mixamorig:RightHandRing4
+    400270: mixamorig:RightHandThumb1
+    400272: mixamorig:RightHandThumb2
+    400274: mixamorig:RightHandThumb3
+    400276: mixamorig:RightHandThumb4
+    400278: mixamorig:RightLeg
+    400280: mixamorig:RightShoulder
+    400282: mixamorig:RightToe_End
+    400284: mixamorig:RightToeBase
+    400286: mixamorig:RightUpLeg
+    400288: mixamorig:Spine
+    400290: mixamorig:Spine1
+    400292: mixamorig:Spine2
+    400294: Shoes
+    400296: Tops
     2100000: BasicBandit_Cloth
     2100002: BasicBandit_Body
     2100004: BasicBandit_EyeMAt
+    2100006: Bodymat
+    2100008: Topmat
+    2100010: Hairmat
+    2100012: Shoesmat
+    2100014: Bottommat
     4300000: BasicBandit_Mask
     4300002: BasicBandit_Clothes
     4300004: BasicBandit_Body
     4300006: BasicBandit_Eye
+    4300008: Eyes
+    4300010: default
+    4300012: Body
+    4300014: Tops
+    4300016: Hair
+    4300018: Shoes
+    4300020: Bottoms
     7400000: mixamo.com
     9500000: //RootNode
     13700000: BasicBandit_Body
     13700002: BasicBandit_Clothes
     13700004: BasicBandit_Eye
     13700006: BasicBandit_Mask
+    13700008: Body
+    13700010: Bottoms
+    13700012: default
+    13700014: Eyes
+    13700016: Hair
+    13700018: Shoes
+    13700020: Tops
   externalObjects: {}
   materials:
     importMaterials: 1
