@@ -34,7 +34,7 @@ public class Weather : MonoBehaviour
   
 
     public float _switchWeatherTimer = 0f;       // switch weather time equal 0
-	public float _resetWeatherTimer = 10f;       // reset weather time equal 20
+	public float _resetWeatherTimer = 60f;       // reset weather time equal 60s=1 min
 	public WeatherStates _weatherState; //Define the naming convention of weathers
 	private int _switchWeather;        // Define the switch range of the weathers
 	
@@ -58,8 +58,11 @@ public class Weather : MonoBehaviour
 	public Color _overcastFog;
 	public Color _snowFog;
 	public float _fogChangeSpeed = 0.1f;
-	
-	public enum WeatherStates{        // Define all states of the weathers
+
+    //Find Avatars
+    
+
+    public enum WeatherStates{        // Define all states of the weathers
 		PickWeather,
 		SunnyWeather,
 		ThunderWeather,
@@ -70,14 +73,16 @@ public class Weather : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		GameObject _playerGameObject = GameObject.FindGameObjectWithTag("Player"); // Find PlayerGameObject
+        
+        GameObject _playerGameObject = GameObject.FindGameObjectWithTag("Player"); // Find PlayerGameObject
 		_player = _playerGameObject.transform;       
         
 		GameObject _weatherGameObject = GameObject.FindGameObjectWithTag("Weather"); // Find weather GameObject
-		_weather= _weatherGameObject.transform;       
-		   
-		// Caches players position
-		RenderSettings.fog = true ;   //enable the fog in rendersettings
+		_weather= _weatherGameObject.transform;
+
+      //_weatherState = WeatherStates.SunnyWeather;
+        // Caches players position
+        RenderSettings.fog = true ;   //enable the fog in rendersettings
 		RenderSettings.fogMode = FogMode.ExponentialSquared;
 		RenderSettings.fogDensity = 0.01f;
 		
@@ -117,11 +122,15 @@ public class Weather : MonoBehaviour
 			 return;
 		 }
 		 if(_switchWeatherTimer==0){
-			 _weatherState=Weather.WeatherStates.PickWeather;   // if timer is 0 then switch to pickweather
-		 }
-		 _switchWeatherTimer=_resetWeatherTimer;// switch timer equals to _resetWeatherTimer 
-		 
-	}	
+            _weatherState = Weather.WeatherStates.SunnyWeather;
+            //The weather is set always to be sunny by the line before, if you want to change it to be dynamic then use the line below.
+            //_weatherState = Weather.WeatherStates.PickWeather;  // if timer is 0 then switch to pickweather
+            
+        }
+        _switchWeatherTimer = _resetWeatherTimer;// switch timer equals to _resetWeatherTimer
+
+
+    }	
 	
 	IEnumerator WeatherFSM(){
 		while(true){//while the weather state machine is active
@@ -152,11 +161,7 @@ public class Weather : MonoBehaviour
 	    _mistParticalSystem.Stop();  // create slot in inspector to assign our mist system
 	    _overcastParticalSystem.Stop();  // create slot in inspector to assign our overcast system
 	    _snowParticalSystem.Stop();  // create slot in inspector to assign our snow system
-        //_sunClouds.enabled = false; // disables sunclouds partical system
-        //_thunder.enabled = false; // disables thunder partical system
-        //_mist.enabled = false; // disables mist partical system
-        //_overcast.enabled = false;// disables overcast partical system
-        //_snow.enabled = false; // disables snow partical system
+        
 
      _sunnyState=false;                       
      _rainState=false;                       

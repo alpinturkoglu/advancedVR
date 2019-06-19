@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Weather
+  - Avatar1
   layers:
   - Default
   - TransparentFX
