@@ -83,10 +83,11 @@ public class Weather : MonoBehaviour
       //_weatherState = WeatherStates.SunnyWeather;
         // Caches players position
         RenderSettings.fog = true ;   //enable the fog in rendersettings
-		RenderSettings.fogMode = FogMode.ExponentialSquared;
+        
+        RenderSettings.fogMode = FogMode.ExponentialSquared;
 		RenderSettings.fogDensity = 0.01f;
-		
-	
+        RenderSettings.fog = false;   //disable the fog in rendersettings delete this line if you want fog
+
         StartCoroutine("WeatherFSM");// start final state machine
     }
 

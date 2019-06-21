@@ -6,10 +6,12 @@ public class AvatarController : MonoBehaviour
 {
     public float _showAvatarTimer = 0f;       // switch weather time equal 0
 
-    public GameObject _avatarObject; // Find PlayerGameObject
-    public GameObject _avatarObject1; // Find PlayerGameObject
-    public GameObject _avatarObject2; // Find PlayerGameObject
-    public GameObject _avatarObject3; // Find PlayerGameObject
+    public GameObject _avatarObject; // Find Avatar1
+    public GameObject _avatarObject1; // Find Avatar2
+    public GameObject _avatarObject2; // Find Avatar3
+    public GameObject _avatarObject3; // Find Avatar4
+    public GameObject _doorObject; // Find Door
+    public GameObject _doorObjectCopy; // Find Door copy
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,8 @@ public class AvatarController : MonoBehaviour
             _avatarObject1.SetActive(false);
             _avatarObject2.SetActive(false);
             _avatarObject3.SetActive(false);
+            _doorObject.SetActive(false);
+            _doorObjectCopy.SetActive(true);
         }
         //Debug.Log("SwitchWeatherTimer ist aufgerufen");
         _showAvatarTimer  += Time.deltaTime; // decrease the timer by real time
@@ -42,7 +46,8 @@ public class AvatarController : MonoBehaviour
         
         if (_showAvatarTimer >= 60)
         {
-
+            _doorObject.SetActive(true);
+            _doorObjectCopy.SetActive(false);
             _avatarObject.SetActive(true);
             _avatarObject1.SetActive(true);
             _avatarObject2.SetActive(true);
